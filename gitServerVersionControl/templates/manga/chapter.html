@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% block title%}
+Manga Home
+{% endblock title%}
+
+{% block content%}
+
+  <style>
+    .content {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+      }
+  
+      .element {
+        display: flex;
+        width: 100%;
+      }
+      * {
+            margin: 0;
+            padding: 0;
+        }
+        .imgbox {
+            display: grid;
+            height: 100%;
+        }
+        .center-fit {
+            max-width: 99%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+  </style>
+  <div>
+    <form action='' method='POST'>{% csrf_token %}
+      <button type="submit" name="fix" class="btn btn-primary">Fix Chapter</button>
+    </form>
+
+
+  </div>
+
+  <div>
+    {% for x in imgList %}
+        <img class="center-fit" src=/{{x}}><br>
+    {% endfor %}
+  </div>
+
+  
+
+{% endblock content%}

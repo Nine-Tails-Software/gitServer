@@ -1,0 +1,137 @@
+{% extends 'base.html' %}
+{% block title%}
+Manga Home
+{% endblock title%}
+
+{% block content%}
+
+  <style>
+    <style>
+      :root {
+          --default-bg: #eeeeee;
+          --red: #ffd8d8;
+          --orange: #ffe4bb;
+          --yellow: #f8f7d4;
+          --green: #d9ffd4;
+          --mint: #dbffea;
+          --turquoise: #d7fefe;
+          --blue: #daeaff;
+          --purple: #dfd6ff;
+          --lavendar: #f6d7ff;
+          --pink: #ffd4ef;
+      }
+      .classes-container {
+          display:flex;
+          flex-flow: row wrap;
+          justify-content: flex-start;
+      }
+
+      .block {
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          offset-position: left 100px;
+          align-items: left;
+          margin: 15px;
+          width: flex;
+          height: flex;
+          border: solid black 1px;
+          border-radius: 25px;
+          padding-top: 18px;
+          padding-left: 20px;
+          background-color: var(--default-bg);
+          color: black;
+          text-decoration: none;
+          cursor: pointer;
+          font-family: Open Sans;
+      }
+
+      .block h3 {
+          text-align: center;
+      }
+
+      .red {
+          background-color: var(--red);
+      }
+
+      .orange {
+          background-color: var(--orange);
+      }
+
+      .yellow {
+          background-color: var(--yellow);
+      }
+
+      .green {
+          background-color: var(--green);
+      }
+
+      .mint {
+          backgroud-color: var(--mint);
+      }
+
+      .turquoise {
+          background-color: var(--turquoise);
+      }
+
+      .blue {
+          background-color: var(--blue);
+      }
+
+      .purple {
+          background-color: var(--purple);
+      }
+
+      .lavendar {
+          background-color: var(--lavendar);
+      }
+
+      .pink {
+          background-color: var(--pink);
+      }
+
+      a {
+          text-decoration: none;
+      }
+
+      .edit {
+          border: dashed black 1px;
+      }
+
+      .content-container {
+          width: 100%;
+          display: flex;
+          position: absolute;
+          left: 0;
+          right: 0;
+          z-index: -1;
+      }
+
+      .form-container {
+          width: 500px;
+          border: solid black 1px;
+          padding: 30px;
+          border-radius: 15px;
+          background-color: white;
+      }
+
+  </style>
+
+
+  <div>
+    {% for x in mangaList %}
+    <a href="/mangasite/manga/{{x.1}}/">
+      <div class="block">
+        <p> {{x.0}} <br>
+            {{x.3}} <br>
+            {{x.5}} </p>
+      </div>
+      </a>
+      <br>
+      <br>
+  {% endfor %}
+  </div>
+
+  
+
+{% endblock content%}

@@ -1,0 +1,142 @@
+{% extends 'base.html' %}
+{% block title%}
+Home
+{% endblock title%}
+
+{% block content%}
+
+  <style>
+    .content {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+    }
+
+    .element {
+      display: flex;
+      width: 100%;
+    }
+  </style>
+
+
+{% for x in repo %}
+    <a href="repo/{{ x.8 }}/">
+        <div>
+            <h1>{{ x.0 }}</h1>
+            <h6>{{ x.8 }}</h6>
+            <h6>{{ x.1 }}</h6>
+            <h6>{{ x.7 }}</h6>
+            <h6>Running {{ x.9 }}</h6>
+            <h6>Database Last Updated : {{ x.12 }}</h6>
+            <!-- Gen Repo          
+            0name
+            1description
+            2owner
+            3keepNumber
+            4fullName
+            5startCommand
+            6url
+            7cTag
+            8code
+            9running
+            10enable
+            11created
+            12updated-->
+            <br> <hr><br>
+        </div>
+    </a>
+{% endfor%}
+
+
+<a data-bs-toggle="modal" data-bs-target="#genRepo">
+      <h3>Generate a New Repo</h3>
+</a>
+
+<!-- Gen Repo -->
+<div class="modal fade" id="genRepo" tabindex="-1" aria-hidden="true">
+<div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Generate a New Repo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+        <form action='/gen' method='POST'>{% csrf_token %}
+
+          <div class="mb-3">
+            <label for="url" class="form-label">URL</label>
+            <input type="text" name="cr_url" class="form-control" id="url" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <input type="text" name="cr_description" class="form-control" id="description" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="startCommand" class="form-label">.sh Start Command</label>
+            <input type="text" name="cr_startCommand" class="form-control" id="startCommand" required>
+          </div>
+
+      <!--
+        <div class="mb-3">
+            <label for="className" class="form-label">Short Description</label>
+            <input type="text" name="description" class="form-control" id="description" placeholder="i.e. Period, Room #, etc.">
+        </div>
+        <div class="mb-3">
+            <label for="classColor" class="form-label">Class Color</label>
+            <select id="classColor" name="classcolor" class="form-select" required>
+                <option selected value="gray">Gray</option>
+                <option value="red">Red</option>
+                <option value="orange">Orange</option>
+                <option value="yellow">Yellow</option>
+                <option value="green">Green</option>
+                <option value="mint">Mint</option>
+                <option value="turquoise">Turquoise</option>
+                <option value="blue">Blue</option>
+                <option value="purple">Purple</option>
+                <option value="lavendar">Lavendar</option>
+                <option value="pink">Pink</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="classIcon" class="form-label">Subject</label>
+            <select id="classIcon" name="subject" class="form-select" required>
+                <option selected disabled="disabled" value="">– Select Subject –</option>
+                <option value="fas fa-paint-brush">Art</option>
+                <option value="fas fa-briefcase">Business</option>
+                <option value="fas fa-laptop-code">Computer Science</option>
+                <option value="fas fa-theater-masks">Drama</option>
+                <option value="fas fa-car-side">Driver's Ed</option>
+                <option value="fas fa-cogs">Engineering</option>
+                <option value="fas fa-book">English/Literature/Language Arts</option>
+                <option value="fas fa-heartbeat">Health</option>
+                <option value="fas fa-landmark">History/Social Studies</option>
+                <option value="fas fa-calculator">Math</option>
+                <option value="fas fa-music">Music/Band</option>
+                <option value="fas fa-football-ball">Physical Education</option>
+                <option value="fas fa-dna">Science (Biology)</option>
+                <option value="fas fa-flask">Science (Chemistry)</option>
+                <option value="fas fa-atom">Science (Physics)</option>
+                <option value="fas fa-microscope">Science (Generic)</option>
+                <option value="fas fa-cross">Theology</option>
+                <option value="fas fa-flag">World Language</option>
+                <option value="fab fa-octopus-deploy">Other</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="year" class="form-label">Year</label>
+            <input type="number" name="year" class="form-control" id="year" required>
+        </div>
+      -->
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary" style="width:100%;border-radius:25px">Generate Repo</button>
+            </div>
+        </form>
+    </div>
+    </div>
+</div>
+</div>
+  
+<br><br><br><br>
+{% endblock content%}

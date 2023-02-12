@@ -1,0 +1,85 @@
+[21:57:29] [ServerMain/INFO]: Building unoptimized datafixer
+[21:57:31] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[21:57:34] [ServerMain/INFO]: Loaded 7 recipes
+[21:57:34] [ServerMain/INFO]: Loaded 1179 advancements
+[21:57:35] [Server thread/INFO]: Starting minecraft server version 1.19.3
+[21:57:35] [Server thread/INFO]: Loading properties
+[21:57:35] [Server thread/INFO]: Default game type: SURVIVAL
+[21:57:35] [Server thread/INFO]: Generating keypair
+[21:57:35] [Server thread/INFO]: Starting Minecraft server on 192.168.1.200:25575
+[21:57:35] [Server thread/INFO]: Using epoll channel type
+[21:57:35] [Server thread/INFO]: Preparing level "world"
+[21:57:41] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[21:57:43] [Worker-Main-14/INFO]: Preparing spawn area: 0%
+[21:57:43] [Worker-Main-4/INFO]: Preparing spawn area: 0%
+[21:57:43] [Worker-Main-4/INFO]: Preparing spawn area: 0%
+[21:57:43] [Worker-Main-4/INFO]: Preparing spawn area: 0%
+[21:57:43] [Worker-Main-4/INFO]: Preparing spawn area: 0%
+[21:57:44] [Worker-Main-10/INFO]: Preparing spawn area: 0%
+[21:57:44] [Worker-Main-10/INFO]: Preparing spawn area: 0%
+[21:57:45] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[21:57:45] [Worker-Main-15/INFO]: Preparing spawn area: 0%
+[21:57:46] [Worker-Main-3/INFO]: Preparing spawn area: 1%
+[21:57:46] [Worker-Main-1/INFO]: Preparing spawn area: 2%
+[21:57:47] [Worker-Main-2/INFO]: Preparing spawn area: 2%
+[21:57:47] [Worker-Main-2/INFO]: Preparing spawn area: 3%
+[21:57:48] [Worker-Main-13/INFO]: Preparing spawn area: 4%
+[21:57:48] [Worker-Main-6/INFO]: Preparing spawn area: 5%
+[21:57:49] [Worker-Main-8/INFO]: Preparing spawn area: 6%
+[21:57:49] [Worker-Main-5/INFO]: Preparing spawn area: 8%
+[21:57:50] [Worker-Main-14/INFO]: Preparing spawn area: 9%
+[21:57:50] [Worker-Main-7/INFO]: Preparing spawn area: 9%
+[21:57:51] [Worker-Main-2/INFO]: Preparing spawn area: 11%
+[21:57:51] [Worker-Main-5/INFO]: Preparing spawn area: 13%
+[21:57:52] [Worker-Main-11/INFO]: Preparing spawn area: 15%
+[21:57:52] [Worker-Main-14/INFO]: Preparing spawn area: 16%
+[21:57:53] [Worker-Main-15/INFO]: Preparing spawn area: 17%
+[21:57:53] [Worker-Main-8/INFO]: Preparing spawn area: 18%
+[21:57:54] [Worker-Main-14/INFO]: Preparing spawn area: 20%
+[21:57:54] [Worker-Main-4/INFO]: Preparing spawn area: 23%
+[21:57:55] [Worker-Main-15/INFO]: Preparing spawn area: 23%
+[21:57:55] [Worker-Main-10/INFO]: Preparing spawn area: 25%
+[21:57:56] [Worker-Main-7/INFO]: Preparing spawn area: 26%
+[21:57:56] [Worker-Main-8/INFO]: Preparing spawn area: 28%
+[21:57:57] [Worker-Main-8/INFO]: Preparing spawn area: 30%
+[21:57:57] [Worker-Main-13/INFO]: Preparing spawn area: 32%
+[21:57:58] [Worker-Main-9/INFO]: Preparing spawn area: 33%
+[21:57:58] [Worker-Main-13/INFO]: Preparing spawn area: 35%
+[21:57:59] [Worker-Main-1/INFO]: Preparing spawn area: 36%
+[21:57:59] [Worker-Main-5/INFO]: Preparing spawn area: 38%
+[21:58:00] [Worker-Main-11/INFO]: Preparing spawn area: 40%
+[21:58:00] [Worker-Main-8/INFO]: Preparing spawn area: 42%
+[21:58:01] [Worker-Main-7/INFO]: Preparing spawn area: 44%
+[21:58:01] [Worker-Main-13/INFO]: Preparing spawn area: 45%
+[21:58:02] [Worker-Main-11/INFO]: Preparing spawn area: 47%
+[21:58:02] [Worker-Main-7/INFO]: Preparing spawn area: 49%
+[21:58:03] [Worker-Main-15/INFO]: Preparing spawn area: 52%
+[21:58:03] [Worker-Main-3/INFO]: Preparing spawn area: 54%
+[21:58:04] [Worker-Main-1/INFO]: Preparing spawn area: 55%
+[21:58:04] [Worker-Main-11/INFO]: Preparing spawn area: 57%
+[21:58:05] [Worker-Main-10/INFO]: Preparing spawn area: 58%
+[21:58:05] [Worker-Main-5/INFO]: Preparing spawn area: 61%
+[21:58:06] [Worker-Main-1/INFO]: Preparing spawn area: 64%
+[21:58:06] [Worker-Main-15/INFO]: Preparing spawn area: 65%
+[21:58:07] [Worker-Main-4/INFO]: Preparing spawn area: 68%
+[21:58:07] [Worker-Main-4/INFO]: Preparing spawn area: 69%
+[21:58:08] [Worker-Main-13/INFO]: Preparing spawn area: 71%
+[21:58:08] [Worker-Main-5/INFO]: Preparing spawn area: 73%
+[21:58:09] [Worker-Main-3/INFO]: Preparing spawn area: 77%
+[21:58:09] [Worker-Main-3/INFO]: Preparing spawn area: 79%
+[21:58:10] [Worker-Main-5/INFO]: Preparing spawn area: 80%
+[21:58:10] [Worker-Main-8/INFO]: Preparing spawn area: 83%
+[21:58:11] [Worker-Main-12/INFO]: Preparing spawn area: 84%
+[21:58:11] [Worker-Main-3/INFO]: Preparing spawn area: 86%
+[21:58:12] [Worker-Main-5/INFO]: Preparing spawn area: 88%
+[21:58:12] [Worker-Main-4/INFO]: Preparing spawn area: 90%
+[21:58:13] [Worker-Main-8/INFO]: Preparing spawn area: 93%
+[21:58:13] [Worker-Main-7/INFO]: Preparing spawn area: 95%
+[21:58:14] [Worker-Main-2/INFO]: Preparing spawn area: 99%
+[21:58:14] [Server thread/INFO]: Time elapsed: 32658 ms
+[21:58:14] [Server thread/INFO]: Done (38.621s)! For help, type "help"
+[21:58:25] [User Authenticator #1/INFO]: UUID of player waffledog1000 is a51e68ec-be33-450a-8326-b099667c4ea5
+[21:58:26] [Server thread/INFO]: waffledog1000[/192.168.1.254:53538] logged in with entity id 233 at (-6.5, 77.0, 68.5)
+[21:58:26] [Server thread/INFO]: waffledog1000 joined the game
+[21:58:53] [Server thread/INFO]: waffledog1000 lost connection: Disconnected
+[21:58:53] [Server thread/INFO]: waffledog1000 left the game

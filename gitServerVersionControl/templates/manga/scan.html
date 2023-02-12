@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% block title%}
+Scan
+{% endblock title%}
+
+{% block content%}
+
+  <style>
+    .content {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+    }
+
+    .element {
+      display: flex;
+      width: 100%;
+    }
+  </style>
+
+
+   <!--
+  <form action='' method='POST'>{% csrf_token %}
+    <button type="submit" name="scan" class="btn btn-primary">Add Book</button>
+  </form>
+    -->
+  <div class="classes-container">
+        <a data-bs-toggle="modal" data-bs-target="#add" >
+            <div class="btn btn-primary">    Add    </div>
+        </a>
+    </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="add" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+      <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">What Url Would You like to add</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+    <form action='' method='POST'>{% csrf_token %}
+        <div class="mb-3">
+            <input type="text" name="bookUrl" class="form-control" id="classCode" required>
+        </div>
+        <div class="mb-3">
+            <button type="submit" name="save" class="btn btn-primary" style="width:100%;border-radius:25px">Add</button>
+        </div>
+    </form>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+{% endblock content%}

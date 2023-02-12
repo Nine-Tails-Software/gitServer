@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% block title%}
+Repo
+{% endblock title%}
+
+{% block content%}
+
+  <style>
+    .content {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+    }
+
+    .element {
+      display: flex;
+      width: 100%;
+    }
+  </style>
+
+    <a>Repo Page</a> <br>
+      
+    
+      <div>
+        <h6>Name : {{ name }}</h6>
+        <h6>Description : {{ description }}</h6>
+        <h6>Repo Owner : {{ owner }}</h6>
+        <h6>Back Log Number : {{ keepNumber }}</h6>
+        <h6>Start Command : {{ startCommand }}</h6>
+        <h6>Github Url : {{ url }}</h6>
+        <h6>last Tag : {{ cTag }}</h6>
+        <h6>Custom Code : {{ code }}</h6>
+        <h6>Enabled On Start : {{ enable }}</h6>
+        <h6>Running : {{ running }}</h6>
+        <h6>Date Created : {{ created }}</h6>
+        <h6>Database Last Updated : {{ updated }}</h6>
+      </div>
+ 
+    <!--  -->
+    <a href="/repo/{{ code }}/journalctl">Journalctl</a><br>
+    <a href="/repo/{{ code }}/start">Start</a><br>
+    <a href="/repo/{{ code }}/stop">Stop</a><br>
+    <a href="/repo/{{ code }}/enable">Enable</a><br>
+    <a href="/repo/{{ code }}/disable">Disable</a><br>
+
+  
+  
+
+{% endblock content%}

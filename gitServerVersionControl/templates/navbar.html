@@ -1,0 +1,38 @@
+{% load static %}
+
+<style>
+  a {
+    color: #4a4a4a !important;
+    font-size: 20px
+  }
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+
+
+
+    <a class="navbar-brand" href="/"><img src="/media/icons/gitServer.png" width="32" height="32"></i>&nbsp;&nbsp;Git Server Control</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+            
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/repositories/"><img src="/media/icons/repositories" width="32" height="32"></i>&nbsp;&nbsp;Repositories</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page">{{ cTime }}</a>
+            </li>
+        
+        </ul>
+
+
+    </div>
+  </div>
+</nav>

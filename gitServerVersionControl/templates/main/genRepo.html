@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block title%}
+Gen Repo
+{% endblock title%}
+
+{% block content%}
+
+  <style>
+    .content {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+    }
+
+    .element {
+      display: flex;
+      width: 100%;
+    }
+  </style>
+
+    <a> This is the Generate Repo Page</a> <br>
+      
+    
+      <div>
+          <br>
+          <h2>User Entered Information</h2>
+          <h6>Github Url :  "{{ repo.5 }}"</h6>
+          <h6>Description :  "{{ repo.1 }}"</h6>
+          <h6>Start Command For Repo : "{{ repo.8 }}"</h6>
+
+          <br>
+          <h2>Scraped Information</h2>
+          <h6>Name :  "{{ repo.0 }}"</h6>
+          <h6>Owner :  "{{ repo.3 }}"</h6>
+          <h6>All Tags :  "{{ repo.9 }}"</h6>
+          <h6>last Tag :  "{{ repo.6 }}"</h6>
+          
+
+          <br>
+          <h2>Generated Information</h2>
+          <h6>Number of Backlogs :  "{{ repo.4 }}"</h6>
+          <h6>Code :  "{{ repo.2 }}"</h6>
+          <h6>Full Name :  "{{ repo.7 }}"</h6>
+          
+
+          <br> <br>
+      </div>
+ 
+    <a> This info Has Been Saved To the Database and has been downloaded</a>
+    <a href="repo/{{ repo.2 }}/">Go to Repository Page</a>
+
+  
+  
+
+{% endblock content%}

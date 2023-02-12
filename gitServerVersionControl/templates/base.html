@@ -1,0 +1,90 @@
+<!-- referst to static folder -->
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <!-- Required meta tags -->
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+
+    <link rel="shortcut icon" sizes="256x256" href="/media/icons/gitServer.png">
+    <!-- Favicon
+    <link rel="shortcut icon" sizes="180x180" href="/media/icons/gitServer.png">
+    <link rel="manifest" href="media/favicon/site.webmanifest">
+    <link rel="mask-icon" href="media/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+     -->
+    
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/38ee34ff70.js" crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet" type="text/css">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"> 
+
+    <title>GitServer | {% block title %}{% endblock title %}</title>
+  </head>
+  <style>
+    body {
+      font-family: Open Sans;
+    }
+
+    a {
+      cursor: pointer;
+    }
+
+    p, h1, h2, h3, h4, h5, h6, label, span {
+      cursor: default;
+    }
+
+    a h3, i {
+      cursor: pointer;
+    }
+
+    button:disabled {
+      cursor: not-allowed;
+    }
+    .container {
+      width: 100%;
+      height: 30px;
+    }
+  </style>
+  <body>
+    {% include 'navbar.html' %}
+    <div class="container mt-3 mb-3">
+      <div class = "container">
+            {%if NotURL == True%}
+              <p style="text-align:Right;">
+              Url Was Not valid
+              </p>
+            {%endif%}
+
+
+          </div>
+        {% block content %}
+        {% endblock content %}
+    </div>
+    
+
+
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

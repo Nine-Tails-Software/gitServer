@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block title%}
+{{title}}
+{% endblock title%}
+
+{% block content%}
+
+  <style>
+    .content {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+    }
+
+    .element {
+      display: flex;
+      width: 100%;
+    }
+  </style>
+
+    <p>{{title}}</p>
+    <p>{{code}}</p>
+    <p>{{scan}}</p>
+    <p>{{description}}</p>
+    <p>{{created}}</p>
+    <p>{{updated}}</p>
+    <p>{{tags}}</p>
+    <p>{{genreTags}}</p>
+    <p>{{url}}</p>
+    <br><br>
+
+    {% for x in chapters%}
+    <a href="chapter/{{x.1}}/">
+    <div>
+    <p>{{x.0}}</p>
+    <!--
+    <p>{{x.1}}</p>
+    <p>{{x.2}}</p>
+    <p>{{x.3}}</p>
+    <p>{{x.4}}</p>
+    <p>{{x.5}}</p>
+    -->
+    <div>
+    </a>
+    <br><br>
+    {% endfor%}
+
+{% endblock content%}

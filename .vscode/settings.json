@@ -1,0 +1,9 @@
+{
+    "cSpell.words": [
+        "ABCDEFGHJKLPQRSTUVWXYZ",
+        "abcdefghkpqrstuvwxyz",
+        "journalctl",
+        "repodoesnotexist"
+    ],
+    "python.analysis.typeCheckingMode": "off"
+}
